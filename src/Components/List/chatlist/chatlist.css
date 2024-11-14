@@ -1,0 +1,95 @@
+.ChatList {
+    flex: 1;
+    overflow: auto; /* Use 'auto' to show scroll only when needed */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+  }
+  
+  .ChatList::-webkit-scrollbar {
+    width: 8px; /* Adjust the scrollbar width */
+  }
+  
+  .ChatList::-webkit-scrollbar-track {
+    background: transparent; /* Transparent or any background you prefer */
+  }
+  
+  .ChatList::-webkit-scrollbar-thumb {
+    background-color: rgba(17, 25, 40, 0.7); /* Custom scrollbar color */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  }
+  
+  .ChatList::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(17, 25, 40, 1); /* Darker color on hover */
+  }
+  
+  /* Additional styles remain the same */
+  
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .searchbar {
+    flex: 1;
+    background-color: rgba(17, 25, 40, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .searchbar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    flex: 1;
+  }
+  
+  .searchbar img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .add {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(17, 25, 40, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #dddddd35;
+  }
+  
+  .item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .item .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .item .texts span {
+    font-weight: 500;
+  }
+  
+  .item .texts p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
